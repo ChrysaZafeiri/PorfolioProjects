@@ -4,8 +4,6 @@ Queries used for Tableau Project
 
 */
 
-
-
 -- 1. 
 
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
@@ -16,8 +14,6 @@ where continent is not null
 order by 1,2
 
 -- Just a double check based off the data provided
--- numbers are extremely close so we will keep them - The Second includes "International"  Location
-
 
 --Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 --From PortfolioProject..CovidDeaths
@@ -25,7 +21,6 @@ order by 1,2
 --where location = 'World'
 ----Group By date
 --order by 1,2
-
 
 -- 2. 
 
@@ -62,16 +57,7 @@ order by PercentPopulationInfected desc
 
 
 
-
-
-
-
-
-
-
-
--- Queries I originally had, but excluded some because it created too long of video
--- Here only in case you want to check them out
+--More Queries that could be done
 
 
 -- 1.
